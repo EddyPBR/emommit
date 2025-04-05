@@ -10,12 +10,16 @@ interface AdBannerProps {
 
 export function AdBanner({ className }: AdBannerProps) {
 	useEffect(() => {
-		try {
-			// biome-ignore lint: suspicious/noAssignInExpressions: This is a workaround to bypass a TypeScript error related to the use of window object.
-			(window.adsbygoogle = window.adsbygoogle || []).push({});
-		} catch (e) {
-			console.error("Erro ao carregar o anúncio:", e);
-		}
+		const timeout = setTimeout(() => {
+			try {
+				// biome-ignore lint: suspicious/noAssignInExpressions: This is a workaround to bypass a TypeScript error related to the use of window object.
+				(window.adsbygoogle = window.adsbygoogle || []).push({});
+			} catch (e) {
+				console.error("Erro ao carregar o anúncio:", e);
+			}
+		}, 200); // espera layout montar
+
+		return () => clearTimeout(timeout);
 	}, []);
 
 	return (
