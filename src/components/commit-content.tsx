@@ -26,22 +26,28 @@ export function CommitContent({ commit }: CommitContentProps) {
 				</Avatar>
 				<span className="font-medium">{commit.author.name}</span>
 				<span className="mx-1">•</span>
-				<code className="text-xs bg-gray-100 dark:bg-neutral-700 text-gray-300 px-1 py-0.5 rounded">
+				<code className="text-xs bg-gray-100 dark:bg-neutral-700 text-gray-600 dark:text-gray-300 px-1 py-0.5 rounded">
 					{commit.hash.substring(0, 7)}
 				</code>
 			</div>
 
 			<div className="text-xs text-gray-500 dark:text-gray-400 flex flex-wrap gap-2">
 				<span className="flex items-center">
-					<span className="w-3 h-3 inline-block mr-1 text-green-600 dark:text-green-400">+</span>
+					<span className="w-3 h-3 inline-block mr-1 text-green-600 dark:text-green-400">
+						+
+					</span>
 					{commit.changes.additions} adições
 				</span>
 				<span className="flex items-center">
-					<span className="w-3 h-3 inline-block mr-1 text-red-600 dark:text-red-400">-</span>
+					<span className="w-3 h-3 inline-block mr-1 text-red-600 dark:text-red-400">
+						-
+					</span>
 					{commit.changes.deletions} remoções
 				</span>
 				<span className="flex items-center">
-					<span className="w-3 h-3 inline-block mr-1 text-gray-500 dark:text-gray-400">•</span>
+					<span className="w-3 h-3 inline-block mr-1 text-gray-500 dark:text-gray-400">
+						•
+					</span>
 					{commit.changes.files} arquivos alterados
 				</span>
 			</div>
