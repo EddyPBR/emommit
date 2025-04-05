@@ -1,19 +1,34 @@
+"use client";
+
+import { useEffect } from "react";
 import { Card, CardContent } from "./ui/card";
+import { env } from "@/configs/env";
 
 interface AdBannerProps {
 	className?: string;
 }
 
 export function AdBanner({ className }: AdBannerProps) {
+	useEffect(() => {
+		try {
+			// biome-ignore lint: suspicious/noAssignInExpressions: This is a workaround to bypass a TypeScript error related to the use of window object.
+			(window.adsbygoogle = window.adsbygoogle || []).push({});
+		} catch (e) {
+			console.error("Erro ao carregar o anúncio:", e);
+		}
+	}, []);
+
 	return (
 		<Card className={`overflow-hidden ${className}`}>
 			<CardContent className="p-4">
-				<div className="bg-gray-100 p-4 rounded-md border border-dashed border-gray-300 text-center">
-					<p className="text-xs text-gray-500 mb-1">PUBLICIDADE</p>
-					<div className="bg-gray-200 h-16 sm:h-24 flex items-center justify-center rounded">
-						<p className="text-gray-500 text-sm">Espaço para anúncios</p>
-					</div>
-				</div>
+				<ins
+					className="adsbygoogle"
+					style={{ display: "block" }}
+					data-ad-client={`ca-pub-${env.ADSENSE_CLIENT_ID}`}
+					data-ad-slot={env.ADSENSE_SLOT} // substitua pelo seu ad-slot
+					data-ad-format="auto"
+					data-full-width-responsive="true"
+				/>
 			</CardContent>
 		</Card>
 	);

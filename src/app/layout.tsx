@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
+import Script from "next/script";
+import { env } from "@/configs/env";
 
 const fireCode = Fira_Code({
 	variable: "--font-fira-code",
@@ -69,6 +71,15 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 	return (
 		<html lang="pt-BR" suppressHydrationWarning>
+			<head>
+				<Script
+					id="adsense-script"
+					strategy="lazyOnload"
+					async
+					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${env.ADSENSE_CLIENT_ID}`}
+					crossOrigin="anonymous"
+				/>
+			</head>
 			<body className={`${fireCode.className} antialiased`}>
 				<ThemeProvider
 					attribute="class"
