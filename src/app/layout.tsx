@@ -5,7 +5,6 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
-import { AdSendScript } from "@/components/ad-sense-script";
 
 const fireCode = Fira_Code({
 	variable: "--font-fira-code",
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
 		type: "website",
 		images: [
 			{
-				url: "https://emommit.dev/emommit-og.png", // se tiver uma imagem social
+				url: "https://www.emommit.com/emommit-og.png", // se tiver uma imagem social
 				width: 1200,
 				height: 630,
 				alt: "Emommit - Emojis para commits",
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
 		title: "Emommit — Emojis para seus commits com estilo",
 		description:
 			"Explore e use emojis para tornar suas mensagens de commit mais divertidas e organizadas.",
-		images: ["https://emommit.dev/emommit-og.png"],
+		images: ["https://www.emommit.com/emommit-og.png"],
 	},
 };
 

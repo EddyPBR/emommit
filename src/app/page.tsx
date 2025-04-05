@@ -1,5 +1,5 @@
 import { AdBanner } from "@/components/ad-banner";
-import EmojiCard from "@/components/emoji-card";
+import { EmojiCard } from "@/components/emoji-card";
 import { getEmommitsByCategory } from "@/data/emmomits";
 
 const commitCategories = getEmommitsByCategory();

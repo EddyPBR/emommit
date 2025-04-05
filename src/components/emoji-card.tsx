@@ -6,7 +6,7 @@ interface EmojiCardProps {
 	description: string;
 }
 
-export default function EmojiCard({
+export function EmojiCard({
 	emoji,
 	emojiKey,
 	description,
