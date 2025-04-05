@@ -7,7 +7,7 @@ export function Footer() {
 				<p className="mb-4">
 					Desenvolvido com 💜 por{" "}
 					<Link
-						href="https://github.com/eddypbr"
+						href="https://eddypbr.com/"
 						className="text-purple-600 hover:text-purple-800 dark:text-purple-500 dark:hover:text-purple-400 font-medium transition-colors"
 						target="_blank"
 						rel="noopener noreferrer"
