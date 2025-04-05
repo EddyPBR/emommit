@@ -32,7 +32,7 @@ export function AdBanner({ className }: AdBannerProps) {
 					}}
 					data-ad-client={`ca-pub-${env.ADSENSE_CLIENT_ID}`}
 					data-ad-slot={env.ADSENSE_SLOT}
-					data-ad-format="auto"
+					// data-ad-format="auto"
 					data-full-width-responsive="true"
 				/>
 			</CardContent>
