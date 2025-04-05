@@ -10,7 +10,7 @@ const envSchema = z.object({
 });
 
 const parsed = envSchema.safeParse({
-	ADSENSE_CLIENT: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID,
+	ADSENSE_CLIENT_ID: process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID,
 	ADSENSE_SLOT: process.env.NEXT_PUBLIC_ADSENSE_SLOT,
 });
 
@@ -22,4 +22,4 @@ if (!parsed.success) {
 	throw new Error("Set the environment variables and restart the server.");
 }
 
-export const env = envSchema.parse(process.env);
+export const env = parsed.data;
