@@ -23,7 +23,12 @@ export function AdBanner({ className }: AdBannerProps) {
 			<CardContent className="p-4">
 				<ins
 					className="adsbygoogle"
-					style={{ display: "block", minHeight: 150, maxHeight: 300 }}
+					style={{
+						display: "block",
+						minHeight: 150,
+						maxHeight: 300,
+						width: "100%",
+					}}
 					data-ad-client={`ca-pub-${env.ADSENSE_CLIENT_ID}`}
 					data-ad-slot={env.ADSENSE_SLOT} // substitua pelo seu ad-slot
 					data-ad-format="auto"
