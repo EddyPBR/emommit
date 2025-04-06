@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { Card, CardContent } from "./ui/card";
 import { env } from "@/configs/env";
 
