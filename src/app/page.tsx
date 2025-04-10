@@ -1,48 +1,66 @@
 import { AdBanner } from "@/components/ad-banner";
+import { CommitList } from "@/components/commit-list";
 import { EmojiCard } from "@/components/emoji-card";
+import { HashUpdater } from "@/components/hasher-updater";
 import { getEmommitsByCategory } from "@/data/emmomits";
 
 const commitCategories = getEmommitsByCategory();
 
 export default function Home() {
+	console.log("render")
 	return (
 		<main className="flex-grow container mx-auto px-4 py-12">
 			<div className="flex flex-col lg:flex-row gap-8">
-				<div className="flex-grow">
-					<h2 className="text-2xl font-bold mb-8 text-center">
-						Tipos de Commit
-					</h2>
+				<div className="flex-grow flex flex-col gap-28">
+					<section id="tipos-de-commit">
+						<h2 className="text-2xl font-bold mb-8 text-center">
+							Tipos de Commit
+						</h2>
 
-					{/* Top Ad Banner - Mobile Only */}
-					<div className="lg:hidden mb-8">
-						<AdBanner />
-					</div>
+						{/* Top Ad Banner - Mobile Only */}
+						<div className="lg:hidden mb-8">
+							<AdBanner />
+						</div>
 
-					{/* Commit Categories */}
-					{commitCategories.map((category, index) => (
-						<section key={category.title} className={index > 0 ? "mt-12" : ""}>
-							<h3 className="text-xl font-semibold mb-4 pb-2 border-b">
-								{category.title}
-							</h3>
-							<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-								{category.commits.map((commit) => (
-									<EmojiCard
-										key={commit.key}
-										emoji={commit.emoji}
-										emojiKey={commit.key}
-										description={commit.description}
-									/>
-								))}
-							</div>
-
-							{/* Insert ad after first category on mobile */}
-							{index === 0 && (
-								<div className="mt-8 lg:hidden">
-									<AdBanner />
+						{/* Commit Categories */}
+						{commitCategories.map((category, index) => (
+							<section key={category.title} className={index > 0 ? "mt-12" : ""}>
+								<h3 className="text-xl font-semibold mb-4 pb-2 border-b">
+									{category.title}
+								</h3>
+								<div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+									{category.commits.map((commit) => (
+										<EmojiCard
+											key={commit.key}
+											emoji={commit.emoji}
+											emojiKey={commit.key}
+											description={commit.description}
+										/>
+									))}
 								</div>
-							)}
-						</section>
-					))}
+
+								{/* Insert ad after first category on mobile */}
+								{index === 0 && (
+									<div className="mt-8 lg:hidden">
+										<AdBanner />
+									</div>
+								)}
+							</section>
+						))}
+					</section>
+
+					<section id="exemplos">
+						<h2 className="text-2xl font-bold mb-8 text-center">
+							Exemplos de uso
+						</h2>
+
+						{/* Top Ad Banner - Mobile Only */}
+						<div className="lg:hidden mb-8">
+							<AdBanner />
+						</div>
+
+						<CommitList />
+					</section>
 				</div>
 
 				{/* Sidebar Ad - Desktop Only */}
@@ -55,6 +73,8 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+
+			<HashUpdater />
 		</main>
 	);
 }

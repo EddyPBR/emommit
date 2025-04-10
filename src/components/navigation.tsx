@@ -13,8 +13,8 @@ export function Navigation() {
 					<span>✨</span>EMOMMIT
 				</Link>
 				<div className="space-x-4">
-					<NavLink href="/">Início</NavLink>
-					<NavLink href="/exemplo">Exemplo</NavLink>
+					<NavLink href="/#tipos-de-commit">Início</NavLink>
+					<NavLink href="/#exemplos">Exemplos</NavLink>
 					<ThemeButton />
 				</div>
 			</div>
