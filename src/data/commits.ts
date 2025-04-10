@@ -36,7 +36,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-04",
 		author: {
 			avatar: "/avatars/mariazinha.png",
-			name: "mariazinha",
+			name: "Mariazinha",
 		},
 		hash: "d4e5f6",
 		changes: {
@@ -66,7 +66,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-04",
 		author: {
 			avatar: "/avatars/mariazinha.png",
-			name: "mariazinha",
+			name: "Mariazinha",
 		},
 		hash: "j1k2l3",
 		changes: {
@@ -81,7 +81,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-03",
 		author: {
 			avatar: "https://avatars.githubusercontent.com/u/48658479?v=4",
-			name: "eddypbr",
+			name: "Edvaldo Junior",
 		},
 		hash: "m4n5o6",
 		changes: {
@@ -111,7 +111,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-03",
 		author: {
 			avatar: "/avatars/mariazinha.png",
-			name: "mariazinha",
+			name: "Mariazinha",
 		},
 		hash: "s1t2u3",
 		changes: {
@@ -126,7 +126,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-02",
 		author: {
 			avatar: "https://avatars.githubusercontent.com/u/48658479?v=4",
-			name: "eddypbr",
+			name: "Edvaldo Junior",
 		},
 		hash: "v4w5x6",
 		changes: {
@@ -156,7 +156,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-02",
 		author: {
 			avatar: "/avatars/mariazinha.png",
-			name: "mariazinha",
+			name: "Mariazinha",
 		},
 		hash: "b0c1d2",
 		changes: {
@@ -171,7 +171,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-02",
 		author: {
 			avatar: "https://avatars.githubusercontent.com/u/48658479?v=4",
-			name: "eddypbr",
+			name: "Edvaldo Junior",
 		},
 		hash: "e3f4g5",
 		changes: {
@@ -201,7 +201,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-02",
 		author: {
 			avatar: "/avatars/mariazinha.png",
-			name: "mariazinha",
+			name: "Mariazinha",
 		},
 		hash: "k9l0m1",
 		changes: {
@@ -216,7 +216,7 @@ export const commits: CommitType[] = [
 		date: "2025-04-02",
 		author: {
 			avatar: "https://avatars.githubusercontent.com/u/48658479?v=4",
-			name: "eddypbr",
+			name: "Edvaldo Junior",
 		},
 		hash: "n2o3p4",
 		changes: {
