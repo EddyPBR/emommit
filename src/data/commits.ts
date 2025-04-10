@@ -20,8 +20,8 @@ export const commits: CommitType[] = [
 		message: "Add initial dashboard page",
 		date: "2025-04-05",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "a1b2c3",
 		changes: {
@@ -35,8 +35,8 @@ export const commits: CommitType[] = [
 		message: "Start payments module (WIP)",
 		date: "2025-04-04",
 		author: {
-			avatar: "/avatars/janedoe.png",
-			name: "janedoe",
+			avatar: "/avatars/mariazinha.png",
+			name: "mariazinha",
 		},
 		hash: "d4e5f6",
 		changes: {
@@ -50,8 +50,8 @@ export const commits: CommitType[] = [
 		message: "Fix bug in product listing",
 		date: "2025-04-04",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "g7h8i9",
 		changes: {
@@ -65,8 +65,8 @@ export const commits: CommitType[] = [
 		message: "Update ESLint configuration",
 		date: "2025-04-04",
 		author: {
-			avatar: "/avatars/janedoe.png",
-			name: "janedoe",
+			avatar: "/avatars/mariazinha.png",
+			name: "mariazinha",
 		},
 		hash: "j1k2l3",
 		changes: {
@@ -95,8 +95,8 @@ export const commits: CommitType[] = [
 		message: "Add API documentation for users",
 		date: "2025-04-03",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "p7q8r9",
 		changes: {
@@ -110,8 +110,8 @@ export const commits: CommitType[] = [
 		message: "Add tests for login component",
 		date: "2025-04-03",
 		author: {
-			avatar: "/avatars/janedoe.png",
-			name: "janedoe",
+			avatar: "/avatars/mariazinha.png",
+			name: "mariazinha",
 		},
 		hash: "s1t2u3",
 		changes: {
@@ -140,8 +140,8 @@ export const commits: CommitType[] = [
 		message: "Refactor authentication logic",
 		date: "2025-04-02",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "y7z8a9",
 		changes: {
@@ -155,8 +155,8 @@ export const commits: CommitType[] = [
 		message: "Deploy version 1.2.0 to production",
 		date: "2025-04-02",
 		author: {
-			avatar: "/avatars/janedoe.png",
-			name: "janedoe",
+			avatar: "/avatars/mariazinha.png",
+			name: "mariazinha",
 		},
 		hash: "b0c1d2",
 		changes: {
@@ -185,8 +185,8 @@ export const commits: CommitType[] = [
 		message: "Merge branch 'feature/checkout' into 'main'",
 		date: "2025-04-02",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "h6i7j8",
 		changes: {
@@ -200,8 +200,8 @@ export const commits: CommitType[] = [
 		message: "Add 'dayjs' package to project",
 		date: "2025-04-02",
 		author: {
-			avatar: "/avatars/janedoe.png",
-			name: "janedoe",
+			avatar: "/avatars/mariazinha.png",
+			name: "mariazinha",
 		},
 		hash: "k9l0m1",
 		changes: {
@@ -230,8 +230,8 @@ export const commits: CommitType[] = [
 		message: "Downgrade Tailwind to avoid compatibility bug",
 		date: "2025-04-01",
 		author: {
-			avatar: "/avatars/johndoe.png",
-			name: "johndoe",
+			avatar: "/avatars/joaozinho.png",
+			name: "Joãozinho",
 		},
 		hash: "q5r6s7",
 		changes: {
