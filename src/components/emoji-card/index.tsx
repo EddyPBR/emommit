@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { EmojiCopy } from "./emoji-copy";
 
 interface EmojiCardProps {
 	emoji: string;
@@ -15,9 +16,11 @@ export function EmojiCard({
 		<Card className="h-full transition-all hover:shadow-md">
 			<CardHeader className="pb-2">
 				<div className="flex items-center justify-between">
-					<span className="text-4xl" aria-hidden="true">
-						{emoji}
-					</span>
+					<EmojiCopy emoji={emoji}>
+						<span className="text-4xl" aria-hidden="true">
+							{emoji}
+						</span>
+					</EmojiCopy>
 					<code className="bg-gray-100 dark:bg-neutral-700 px-2 py-1 rounded text-sm font-mono">
 						{emojiKey}
 					</code>
