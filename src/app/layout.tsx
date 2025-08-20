@@ -6,6 +6,7 @@ import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Hero } from "@/components/hero";
 import AdScriptLoader from "@/components/ad-script-loader";
+import { Toaster } from "@/components/ui/sonner";
 
 const fireCode = Fira_Code({
 	variable: "--font-fira-code",
@@ -89,6 +90,8 @@ export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
 				</ThemeProvider>
 
 				<AdScriptLoader />
+
+				<Toaster />
 			</body>
 		</html>
 	);
